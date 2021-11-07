@@ -12,10 +12,8 @@ app.initializers.add('clarkwinkelmann-likes-received', () => {
         if (parseInt(likes) && likes > 0) {
             items.add('likesReceived', m('span.UserCard-likesReceived', [
                 icon('far fa-thumbs-up'),
-                ' ',
-                app.translator.trans('clarkwinkelmann-likes-received.forum.user-card.likes', {
-                    likes,
-                }),
+                ' Polubień: ',
+                likes,
             ]));
         }
     });
