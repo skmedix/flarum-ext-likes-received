@@ -964,15 +964,42 @@
     "@babel/helper-validator-identifier" "^7.14.8"
     to-fast-properties "^2.0.0"
 
+"@flarum/prettier-config@^1.0.0":
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/@flarum/prettier-config/-/prettier-config-1.0.0.tgz#3ce431fa376994e8133e313dbe7c4ee3d3fe1a39"
+  integrity sha512-3/AcliIi5jPt4i7COb5hsLv6hm4EeXT9yI9I2EuEvhPi2QR+O9Y/8wrqRuO5mDkRzCIhUY+mjIL/f9770Zwfqg==
+
 "@polka/url@^1.0.0-next.15":
   version "1.0.0-next.15"
   resolved "https://registry.yarnpkg.com/@polka/url/-/url-1.0.0-next.15.tgz#6a9d143f7f4f49db2d782f9e1c8839a29b43ae23"
   integrity sha512-15spi3V28QdevleWBNXE4pIls3nFZmBbUGrW9IVPwiQczuSb9n76TCB4bsk8TSel+I1OkHEdPhu5QKMfY6rQHA==
 
+"@types/jquery@^3.5.5":
+  version "3.5.8"
+  resolved "https://registry.yarnpkg.com/@types/jquery/-/jquery-3.5.8.tgz#83bfbcdf4e625c5471590f92703c06aadb052a09"
+  integrity sha512-cXk6NwqjDYg+UI9p2l3x0YmPa4m7RrXqmbK4IpVVpRJiYXU/QTo+UZrn54qfE1+9Gao4qpYqUnxm5ZCy2FTXAw==
+  dependencies:
+    "@types/sizzle" "*"
+
 "@types/json-schema@^7.0.5":
   version "7.0.8"
   resolved "https://registry.yarnpkg.com/@types/json-schema/-/json-schema-7.0.8.tgz#edf1bf1dbf4e04413ca8e5b17b3b7d7d54b59818"
   integrity sha512-YSBPTLTVm2e2OoQIDYx8HaeWJ5tTToLH67kXR7zYNGupXMEHa2++G8k+DczX2cFVgalypqtyZIcU19AFcmOpmg==
+
+"@types/mithril@^2.0.7":
+  version "2.0.8"
+  resolved "https://registry.yarnpkg.com/@types/mithril/-/mithril-2.0.8.tgz#b7b6f58bdc7b244802f5ff919805e947d8e45b4e"
+  integrity sha512-QzVV70DqUhWfLFpMFDBI9rRxtzeUUpbhiFDpUJYSV92AePgl+Qfficgv2MOb1Ceb+lBOQU8+L+Hjf2UielQjEw==
+
+"@types/sizzle@*":
+  version "2.3.3"
+  resolved "https://registry.yarnpkg.com/@types/sizzle/-/sizzle-2.3.3.tgz#ff5e2f1902969d305225a047c8a0fd5c915cebef"
+  integrity sha512-JYM8x9EGF163bEyhdJBpR2QX1R5naCJHC8ucJylJ3w9/CVBaskdQ8WqBf8MmQrd1kRvp/a4TS8HJ+bxzR7ZJYQ==
+
+"@types/throttle-debounce@^2.1.0":
+  version "2.1.0"
+  resolved "https://registry.yarnpkg.com/@types/throttle-debounce/-/throttle-debounce-2.1.0.tgz#1c3df624bfc4b62f992d3012b84c56d41eab3776"
+  integrity sha512-5eQEtSCoESnh2FsiLTxE121IiE60hnMqcb435fShf4bpLRjEu1Eoekht23y6zXS9Ts3l+Szu3TARnTsA0GkOkQ==
 
 "@webassemblyjs/ast@1.9.0":
   version "1.9.0"
@@ -1815,6 +1842,11 @@ cyclist@^1.0.1:
   resolved "https://registry.yarnpkg.com/cyclist/-/cyclist-1.0.1.tgz#596e9698fd0c80e12038c2b82d6eb1b35b6224d9"
   integrity sha1-WW6WmP0MgOEgOMK4LW6xs1tiJNk=
 
+dayjs@^1.10.4:
+  version "1.10.7"
+  resolved "https://registry.yarnpkg.com/dayjs/-/dayjs-1.10.7.tgz#2cf5f91add28116748440866a0a1d26f3a6ce468"
+  integrity sha512-P6twpd70BcPK34K26uJ1KT3wlhpuOAPoMwJzpsIWUxHZ7wpmbdZL/hQqBDfz7hGurYSa5PhzdhDHtt319hL3ig==
+
 debug@^2.2.0, debug@^2.3.3:
   version "2.6.9"
   resolved "https://registry.yarnpkg.com/debug/-/debug-2.6.9.tgz#5d128515df134ff327e90a4c93f4e077a536341f"
@@ -2143,7 +2175,17 @@ findup-sync@^3.0.0:
     micromatch "^3.0.4"
     resolve-dir "^1.0.1"
 
-flarum-webpack-config@^1.0:
+flarum-tsconfig@^1.0.2:
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/flarum-tsconfig/-/flarum-tsconfig-1.0.2.tgz#1dda4d867a1dddc627c2afbc74af12d602371ecd"
+  integrity sha512-RUaN7D6noLK9vY1F86NIc+IlIP1YAA3bJ4jGR5pIm8UxvLBLW8qrAHzIosuQJgvnge7VgTA5c2LoNefUK/9EiQ==
+  dependencies:
+    "@types/jquery" "^3.5.5"
+    "@types/mithril" "^2.0.7"
+    "@types/throttle-debounce" "^2.1.0"
+    dayjs "^1.10.4"
+
+flarum-webpack-config@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/flarum-webpack-config/-/flarum-webpack-config-1.0.0.tgz#daf76829d1a71d1af61b5ab6c98e6c61aa6f1b1a"
   integrity sha512-T+olIRaIVetPJMP8xlbMnp7tzT/d/ZWI6Mr7twRBdsKbKO7dpKS2+fjnKL6QqNYgOLElT/TWrRSbTp7EiL1yXA==
@@ -2161,6 +2203,11 @@ flarum-webpack-config@^1.0:
     babel-loader "^8.2.2"
     typescript "^4.3.2"
     webpack-bundle-analyzer "^4.4.2"
+
+flarum@^0.1.0-beta.16:
+  version "0.1.0-beta.16"
+  resolved "https://registry.yarnpkg.com/flarum/-/flarum-0.1.0-beta.16.tgz#6571adfd6632ea25794ab5270a9bd8ac2f38e1d3"
+  integrity sha512-uovm+6J8TO35dfbTSRtHRH6tz71W4dnEDfB63NOKHIhOz8oRh65qyWpXtlBOjv9f1cFMkMcjGHbWetb5lAIEnQ==
 
 flush-write-stream@^1.0.0:
   version "1.1.1"
@@ -3179,6 +3226,11 @@ posix-character-classes@^0.1.0:
   version "0.1.1"
   resolved "https://registry.yarnpkg.com/posix-character-classes/-/posix-character-classes-0.1.1.tgz#01eac0fe3b5af71a2a6c02feabb8c1fef7e00eab"
   integrity sha1-AerA/jta9xoqbAL+q7jB/vfgDqs=
+
+prettier@^2.4.1:
+  version "2.4.1"
+  resolved "https://registry.yarnpkg.com/prettier/-/prettier-2.4.1.tgz#671e11c89c14a4cfc876ce564106c4a6726c9f5c"
+  integrity sha512-9fbDAXSBcc6Bs1mZrDYb3XKzDLm4EXXL9sC1LqKP5rZkT6KRr/rf9amVUcODVXgguK/isJz0d0hP72WeaKWsvA==
 
 process-nextick-args@~2.0.0:
   version "2.0.1"
