@@ -9,7 +9,7 @@ app.initializers.add('clarkwinkelmann-likes-received', () => {
     extend(UserCard.prototype, 'infoItems', function (items) {
         const likes = this.attrs.user.attribute('likesReceived');
 
-        if (Number.isInteger(likes)) {
+        if (parseInt(likes) && likes > 0) {
             items.add('likesReceived', m('span.UserCard-likesReceived', [
                 icon('far fa-thumbs-up'),
                 ' ',
